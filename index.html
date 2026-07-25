@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>YEAB Luxury Perfume | Discover Your Signature Scent</title>
+  <meta name="description" content="Explore YEAB Luxury Perfume’s collection of distinctive fragrances for women, men and unisex preferences. Enquire and order directly through WhatsApp." />
+  <meta name="theme-color" content="#050505" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="YEAB Luxury Perfume | Discover Your Signature Scent" />
+  <meta property="og:description" content="Explore YEAB Luxury Perfume’s collection of distinctive fragrances for women, men and unisex preferences. Enquire and order directly through WhatsApp." />
+  <meta property="og:image" content="yeab-logo.png" />
+  <meta property="og:site_name" content="YEAB Luxury Perfume" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="yeab-logo.png" />
+  <link rel="apple-touch-icon" href="yeab-logo.png" />
+
+  <!-- Fonts: elegant serif display + clean sans-serif body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== 1. Announcement bar ===== -->
+  <div class="announcement" role="note">
+    <p>Discover your signature scent with <span>YEAB Luxury Perfume</span></p>
+  </div>
+
+  <!-- ===== 2. Header / navigation ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="header__brand" aria-label="YEAB Luxury Perfume — Home">
+        <img src="yeab-logo.png" alt="YEAB Luxury Perfume logo" class="header__logo" width="120" height="48" />
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#collection" class="nav__link">Collection</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a class="btn btn--gold nav__cta" data-wa-general href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== 3. Hero section ===== -->
+    <section class="hero" id="home">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" id="hero-video" autoplay muted loop playsinline preload="metadata" poster="">
+          <source src="hero-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">YEAB LUXURY PERFUME</p>
+        <h1 class="hero__title reveal">Your Scent. Your&nbsp;Signature.</h1>
+        <p class="hero__text reveal">Discover distinctive fragrances crafted to leave a lasting impression.</p>
+        <div class="hero__actions reveal">
+          <a href="#featured" class="btn btn--gold js-scroll">Explore Collection</a>
+          <a href="#" class="btn btn--ghost" data-wa-general target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <a href="#featured" class="hero__scroll js-scroll" aria-label="Scroll to the featured collection">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===== 4. Featured collection ===== -->
+    <section class="section section--ivory featured" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-head__eyebrow">The Selection</p>
+          <h2 class="section-head__title" id="featured-title">Featured Collection</h2>
+          <span class="gold-divider" aria-hidden="true"></span>
+        </header>
+
+        <div class="featured__grid">
+          <!-- Featured cards are rendered by script.js from the product data -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Brand statement ===== -->
+    <section class="section section--dark statement" aria-labelledby="statement-title">
+      <div class="container container--narrow">
+        <header class="section-head reveal">
+          <p class="section-head__eyebrow">The YEAB Promise</p>
+          <h2 class="section-head__title statement__title" id="statement-title">More Than a Fragrance</h2>
+          <span class="gold-divider" aria-hidden="true"></span>
+          <p class="section-head__text">YEAB Luxury Perfume brings together expressive aromas and elegant presentation to help every customer discover a scent that feels uniquely their own.</p>
+        </header>
+
+        <ul class="benefits" role="list">
+          <li class="benefit reveal">
+            <span class="benefit__icon" aria-hidden="true">
+              <!-- Droplet line icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6c6 8.5 12 14.8 12 22a12 12 0 0 1-24 0c0-7.2 6-13.5 12-22Z"/>
+                <path d="M18.5 29a6 6 0 0 0 4.5 5.5"/>
+              </svg>
+            </span>
+            <h3 class="benefit__title">Distinctive Scents</h3>
+            <p class="benefit__text">A curated range of warm, fresh, floral, fruity and bold profiles to suit every preference.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon" aria-hidden="true">
+              <!-- Gift / presentation line icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="18" width="32" height="24" rx="1"/>
+                <path d="M8 26h32M24 18v24"/>
+                <path d="M24 18c-4 0-9-1.5-9-6a4 4 0 0 1 8-1c.5 2 1 5 1 7Zm0 0c4 0 9-1.5 9-6a4 4 0 0 0-8-1c-.5 2-1 5-1 7Z"/>
+              </svg>
+            </span>
+            <h3 class="benefit__title">Elegant Presentation</h3>
+            <p class="benefit__text">Every fragrance is presented with the refinement a signature scent deserves.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon" aria-hidden="true">
+              <!-- Chat / assistance line icon -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M40 22a14 14 0 0 1-14 14h-3l-9 6v-8.2A14 14 0 1 1 40 22Z"/>
+                <path d="M18 22h12M18 28h7"/>
+              </svg>
+            </span>
+            <h3 class="benefit__title">Personal Assistance</h3>
+            <p class="benefit__text">Message us directly on WhatsApp for guidance in choosing your perfect fragrance.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 6. Complete collection ===== -->
+    <section class="section section--ivory collection" id="collection" aria-labelledby="collection-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-head__eyebrow">The Full Range</p>
+          <h2 class="section-head__title" id="collection-title">Complete Collection</h2>
+          <span class="gold-divider" aria-hidden="true"></span>
+        </header>
+
+        <div class="collection__controls reveal">
+          <div class="filters" role="group" aria-label="Filter products by category">
+            <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="women" aria-pressed="false">Women</button>
+            <button class="filter-btn" data-filter="men" aria-pressed="false">Men</button>
+            <button class="filter-btn" data-filter="unisex" aria-pressed="false">Unisex</button>
+          </div>
+
+          <div class="search">
+            <label class="visually-hidden" for="product-search">Search products by name or code</label>
+            <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/>
+            </svg>
+            <input type="search" id="product-search" class="search__input" placeholder="Search by name or code…" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="collection__grid" id="collection-grid">
+          <!-- Product cards are rendered by script.js from the product data -->
+        </div>
+
+        <p class="collection__empty" id="collection-empty" hidden>No fragrances match your search. Try a different name or code.</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. Signature experience banner ===== -->
+    <section class="section banner" aria-labelledby="banner-title">
+      <div class="container container--narrow banner__inner reveal">
+        <h2 class="banner__title" id="banner-title">Find the Fragrance That Speaks for You</h2>
+        <span class="gold-divider" aria-hidden="true"></span>
+        <p class="banner__text">Not sure which scent to choose? Message YEAB directly and receive personal assistance.</p>
+        <a href="#" class="btn btn--gold" data-wa-help target="_blank" rel="noopener">Get Help on WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- ===== 8. About section ===== -->
+    <section class="section section--ivory about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <div class="about__copy reveal">
+          <p class="section-head__eyebrow">Our Story</p>
+          <h2 class="section-head__title" id="about-title">The Essence of YEAB</h2>
+          <span class="gold-divider gold-divider--left" aria-hidden="true"></span>
+          <p class="about__text">YEAB Luxury Perfume is dedicated to making fragrance discovery personal, elegant and memorable. Our collection brings together warm, fresh, floral, fruity and bold scent profiles for women, men and anyone searching for a distinctive signature.</p>
+          <a href="#collection" class="btn btn--outline js-scroll">View the Collection</a>
+        </div>
+
+        <div class="about__collage reveal" aria-label="A selection of YEAB fragrances">
+          <figure class="about__frame about__frame--tall">
+            <img src="saffron-ember-34u.webp" alt="Saffron Ember unisex fragrance by YEAB Luxury Perfume" loading="lazy" />
+          </figure>
+          <figure class="about__frame">
+            <img src="amber-rose-15w.webp" alt="Amber Rose women’s fragrance by YEAB Luxury Perfume" loading="lazy" />
+          </figure>
+          <figure class="about__frame">
+            <img src="golden-neroli-10m.webp" alt="Golden Neroli men’s fragrance by YEAB Luxury Perfume" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. Contact section ===== -->
+    <section class="section section--dark contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <div class="contact__info reveal">
+          <p class="section-head__eyebrow">Get in Touch</p>
+          <h2 class="section-head__title" id="contact-title">Contact YEAB</h2>
+          <span class="gold-divider gold-divider--left" aria-hidden="true"></span>
+          <p class="contact__lead">For prices, availability or personal recommendations, reach us directly — we reply on WhatsApp.</p>
+
+          <ul class="contact__list" role="list">
+            <li>
+              <span class="contact__label">Phone</span>
+              <a class="contact__value" href="tel:+971523542935">052 354 2935</a>
+            </li>
+            <li>
+              <span class="contact__label">WhatsApp</span>
+              <a class="contact__value" href="#" data-wa-general target="_blank" rel="noopener">052 354 2935</a>
+            </li>
+            <li>
+              <span class="contact__label">TikTok</span>
+              <a class="contact__value" href="https://www.tiktok.com/@yeabperfume" target="_blank" rel="noopener">@yeabperfume</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal" id="contact-form" novalidate>
+          <h3 class="contact__form-title">Send an Enquiry via WhatsApp</h3>
+
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required />
+            <p class="field__error" id="cf-name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="field">
+            <label for="cf-phone">Phone</label>
+            <input type="tel" id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" required />
+            <p class="field__error" id="cf-phone-error" hidden>Please enter a valid phone number.</p>
+          </div>
+
+          <div class="field">
+            <label for="cf-product">Product of Interest</label>
+            <select id="cf-product" name="product">
+              <option value="">General enquiry</option>
+              <!-- Options are populated by script.js from the product data -->
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+            <p class="field__error" id="cf-message-error" hidden>Please write a short message.</p>
+          </div>
+
+          <button type="submit" class="btn btn--gold contact__submit">
+            Send via WhatsApp
+          </button>
+          <p class="contact__form-note">Submitting opens WhatsApp with your enquiry — nothing is stored on this website.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 10. Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="yeab-logo.png" alt="YEAB Luxury Perfume logo" class="footer__logo" width="140" height="56" loading="lazy" />
+        <p class="footer__tagline">Distinctive fragrances, chosen personally — your scent, your signature.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <h3 class="footer__heading">Explore</h3>
+        <ul role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <h3 class="footer__heading">Contact</h3>
+        <ul role="list">
+          <li><a href="tel:+971523542935">Phone: 052 354 2935</a></li>
+          <li><a href="#" data-wa-general target="_blank" rel="noopener">WhatsApp: 052 354 2935</a></li>
+          <li><a href="https://www.tiktok.com/@yeabperfume" target="_blank" rel="noopener">TikTok: @yeabperfume</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="copyright-year"></span> YEAB Luxury Perfume. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== 11. Floating WhatsApp button ===== -->
+  <a href="#" class="wa-float" data-wa-general target="_blank" rel="noopener" aria-label="Chat with YEAB Luxury Perfume on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M16 3C9.1 3 3.5 8.6 3.5 15.5c0 2.2.6 4.3 1.7 6.2L3.4 28l6.5-1.7c1.8 1 3.9 1.5 6.1 1.5 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3Zm0 22.7c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4a10.2 10.2 0 1 1 8.9 4.9Zm5.6-7.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.1 3.1 1.3 3.3c.2.2 2.2 3.4 5.4 4.8.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
