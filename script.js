@@ -17,7 +17,7 @@
     { name: "Saffron Ember",  code: "34U", category: "Unisex", image: "saffron-ember-34u.webp",  featured: true },
     { name: "Citrus Oud",     code: "21M", category: "Men",    image: "citrus-oud-21m.webp",     featured: true },
     { name: "Midnight Pear",  code: "19W", category: "Women",  image: "midnight-pear-19w.webp",  featured: true },
-    { name: "Lychee Velvet",  code: "18W", category: "Women",  image: "lychee-velvet-18w.webp",  featured: true },
+    { name: "Lychee Velvet",  code: "18W", category: "Women",  image: "lychee-velvet-18.webp",   featured: true },
     { name: "Tropical Amber", code: "20W", category: "Women",  image: "tropical-amber-20w.webp" },
     { name: "Green Rose",     code: "14W", category: "Women",  image: "green-rose-14w.webp" },
     { name: "Golden Neroli",  code: "10M", category: "Men",    image: "golden-neroli-10m.webp" },
@@ -62,7 +62,9 @@
     var lazy = options && options.lazy;
 
     var card = document.createElement("article");
-    card.className = "card reveal";
+    // No "reveal" class on product cards: they must stay visible
+    // even if the scroll-animation JS fails for any reason.
+    card.className = "card";
     card.setAttribute("data-category", product.category.toLowerCase());
     card.setAttribute("data-name", product.name.toLowerCase());
     card.setAttribute("data-code", product.code.toLowerCase());
