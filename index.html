@@ -44,7 +44,7 @@
       <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         <ul class="nav__list">
           <li><a href="#home" class="nav__link">Home</a></li>
-          <li><a href="#collection" class="nav__link">Collection</a></li>
+          <li><a href="collection.html" class="nav__link">Collection</a></li>
           <li><a href="#about" class="nav__link">About</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
@@ -98,6 +98,10 @@
         <div class="featured__grid">
           <!-- Featured cards are rendered by script.js from the product data -->
         </div>
+
+        <div class="featured__more reveal">
+          <a href="collection.html" class="btn btn--outline">View All Collection</a>
+        </div>
       </div>
     </section>
 
@@ -121,7 +125,7 @@
               </svg>
             </span>
             <h3 class="benefit__title">Distinctive Scents</h3>
-            <p class="benefit__text">A curated range of warm, fresh, floral, fruity and bold profiles to suit every preference.</p>
+            <p class="benefit__text">Unique fragrances for every style.</p>
           </li>
           <li class="benefit reveal">
             <span class="benefit__icon" aria-hidden="true">
@@ -133,7 +137,7 @@
               </svg>
             </span>
             <h3 class="benefit__title">Elegant Presentation</h3>
-            <p class="benefit__text">Every fragrance is presented with the refinement a signature scent deserves.</p>
+            <p class="benefit__text">Luxury in every detail.</p>
           </li>
           <li class="benefit reveal">
             <span class="benefit__icon" aria-hidden="true">
@@ -144,47 +148,13 @@
               </svg>
             </span>
             <h3 class="benefit__title">Personal Assistance</h3>
-            <p class="benefit__text">Message us directly on WhatsApp for guidance in choosing your perfect fragrance.</p>
+            <p class="benefit__text">We help you choose your scent.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- ===== 6. Complete collection ===== -->
-    <section class="section section--ivory collection" id="collection" aria-labelledby="collection-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="section-head__eyebrow">The Full Range</p>
-          <h2 class="section-head__title" id="collection-title">Complete Collection</h2>
-          <span class="gold-divider" aria-hidden="true"></span>
-        </header>
-
-        <div class="collection__controls reveal">
-          <div class="filters" role="group" aria-label="Filter products by category">
-            <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-btn" data-filter="women" aria-pressed="false">Women</button>
-            <button class="filter-btn" data-filter="men" aria-pressed="false">Men</button>
-            <button class="filter-btn" data-filter="unisex" aria-pressed="false">Unisex</button>
-          </div>
-
-          <div class="search">
-            <label class="visually-hidden" for="product-search">Search products by name or code</label>
-            <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
-              <circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/>
-            </svg>
-            <input type="search" id="product-search" class="search__input" placeholder="Search by name or code…" autocomplete="off" />
-          </div>
-        </div>
-
-        <div class="collection__grid" id="collection-grid">
-          <!-- Product cards are rendered by script.js from the product data -->
-        </div>
-
-        <p class="collection__empty" id="collection-empty" hidden>No fragrances match your search. Try a different name or code.</p>
-      </div>
-    </section>
-
-    <!-- ===== 7. Signature experience banner ===== -->
+    <!-- ===== 6. Signature experience banner ===== -->
     <section class="section banner" aria-labelledby="banner-title">
       <div class="container container--narrow banner__inner reveal">
         <h2 class="banner__title" id="banner-title">Find the Fragrance That Speaks for You</h2>
@@ -202,7 +172,7 @@
           <h2 class="section-head__title" id="about-title">The Essence of YEAB</h2>
           <span class="gold-divider gold-divider--left" aria-hidden="true"></span>
           <p class="about__text">YEAB Luxury Perfume is dedicated to making fragrance discovery personal, elegant and memorable. Our collection brings together warm, fresh, floral, fruity and bold scent profiles for women, men and anyone searching for a distinctive signature.</p>
-          <a href="#collection" class="btn btn--outline js-scroll">View the Collection</a>
+          <a href="collection.html" class="btn btn--outline">View the Collection</a>
         </div>
 
         <div class="about__collage reveal" aria-label="A selection of YEAB fragrances">
@@ -294,7 +264,7 @@
         <h3 class="footer__heading">Explore</h3>
         <ul role="list">
           <li><a href="#home">Home</a></li>
-          <li><a href="#collection">Collection</a></li>
+          <li><a href="collection.html">Collection</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
