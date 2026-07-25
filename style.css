@@ -262,6 +262,18 @@ textarea:focus-visible {
     box-shadow 0.35s var(--ease);
 }
 
+/* Always-solid header variant (used on collection.html, which has no hero) */
+.header--solid {
+  background-color: rgba(5, 5, 5, 0.96);
+  border-bottom-color: var(--gold-faint);
+}
+
+/* Anchored sections scroll into view below the sticky header */
+main [id],
+section[id] {
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}
+
 /* Solid dark header once the page is scrolled (toggled in script.js) */
 .header.is-scrolled {
   background-color: rgba(5, 5, 5, 0.94);
@@ -330,12 +342,14 @@ textarea:focus-visible {
 }
 
 .nav__link:hover,
-.nav__link:focus-visible {
+.nav__link:focus-visible,
+.nav__link.is-active {
   color: var(--gold);
 }
 
 .nav__link:hover::after,
-.nav__link:focus-visible::after {
+.nav__link:focus-visible::after,
+.nav__link.is-active::after {
   transform: scaleX(1);
 }
 
@@ -507,6 +521,15 @@ textarea:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.featured__more {
+  text-align: center;
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.featured__more .btn {
+  margin-top: 0;
 }
 
 .collection__grid {
@@ -746,6 +769,30 @@ textarea:focus-visible {
   color: var(--ink-soft);
   font-style: italic;
   padding-block: 2.5rem;
+}
+
+/* ---- Dedicated collection page (collection.html): compact spacing ---- */
+.collection--page {
+  padding-block: clamp(2.2rem, 5vw, 4rem);
+}
+
+.section-head--compact {
+  margin-bottom: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+.section-head--compact .section-head__text {
+  margin-top: 1rem;
+  max-width: 520px;
+  font-size: 1rem;
+}
+
+.collection--page .collection__controls {
+  margin-bottom: clamp(1.4rem, 3vw, 2rem);
+  padding-bottom: 1.1rem;
+}
+
+.collection--page .search__input {
+  padding-block: 0.6rem;
 }
 
 /* ============================================================
@@ -1145,31 +1192,111 @@ textarea:focus-visible {
 }
 
 @media (max-width: 640px) {
-  .collection__grid {
+  /* Featured products: compact two-column grid on mobile */
+  .featured__grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
   }
 
+  .collection__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+  }
+
+  /* Slightly shorter product images on mobile (bottle stays fully framed) */
+  .card__media {
+    aspect-ratio: 5 / 6;
+  }
+
+  .card__category {
+    top: 0.6rem;
+    left: 0.6rem;
+    padding: 0.22rem 0.55rem;
+    font-size: 0.56rem;
+  }
+
+  /* Tighter card content: smaller text, reduced white space */
   .card__body {
-    padding: 1rem 0.9rem 1.2rem;
+    padding: 0.85rem 0.7rem 1rem;
+    gap: 0.2rem;
   }
 
   .card__name {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+  }
+
+  .card__code {
+    font-size: 0.64rem;
+    letter-spacing: 0.24em;
+  }
+
+  .card__btn {
+    padding-top: 0.75rem;
   }
 
   .card__btn .btn {
-    padding: 0.65rem 0.6rem;
-    font-size: 0.62rem;
-    letter-spacing: 0.12em;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    white-space: normal; /* button text may wrap on two balanced lines */
+  }
+
+  /* Benefits: three compact stacked cards on mobile — no overflow */
+  .benefits {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  .benefit__icon {
+    width: 48px;
+    height: 48px;
+    padding: 11px;
+    margin-bottom: 0.7rem;
+  }
+
+  .benefit__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .benefit__text {
+    font-size: 0.9rem;
+  }
+
+  .section-head__text {
+    font-size: 0.95rem;
+    max-width: 40ch;
   }
 
   .collection__controls {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.9rem;
+  }
+
+  /* Filters: compact two-column layout, equal-sized buttons */
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    width: 100%;
+    padding: 0.55rem 0.5rem;
+    text-align: center;
   }
 
   .search {
     max-width: none;
+    flex-basis: auto;
+  }
+
+  /* Compact collection-page heading on mobile */
+  .collection--page .section-head__title {
+    font-size: 1.75rem;
   }
 
   .hero__actions .btn {
@@ -1185,10 +1312,6 @@ textarea:focus-visible {
 }
 
 @media (max-width: 420px) {
-  .featured__grid {
-    grid-template-columns: 1fr;
-  }
-
   .footer__inner {
     grid-template-columns: 1fr;
   }
